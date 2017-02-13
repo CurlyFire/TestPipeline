@@ -1,6 +1,5 @@
-﻿{
-  "version": "1.0.0-*",
-
+{
+  "version": "1.1.0",
   "dependencies": {
     "FluentAssertions": "4.16.0",
     "Moq": "4.6.38-alpha",
@@ -8,7 +7,6 @@
     "dotnet-test-nunit": "3.4.0-beta-3"
   },
   "testRunner": "nunit",
-
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
