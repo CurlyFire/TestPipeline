@@ -61,5 +61,5 @@
       "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
     ]
   },
-  "version": "9.9.10"
+  "version": "9.9.11"
 }
