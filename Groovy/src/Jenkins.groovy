@@ -21,5 +21,15 @@ node('')
         sh('dotnet build **/project.json')
     }
 
+    stage('Tests')
+    {
+        sh('for d in $(grep -r -e "testRunner" -l | xargs dirname); do (cd $d && dotnet test); done')
+    }
+
+    stage('Publish')
+    {
+        sh('''cd $WORKSPACE/Presentation.Web 
+              dotnet publish -o Docker/output''')
+    }
 }
 
