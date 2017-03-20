@@ -16,7 +16,7 @@ node('')
         sh('dotnet restore --configfile ~/.config/NuGet/NuGet.Config')
     }
 
-    stage('Restore')
+    stage('Build')
     {
         sh('dotnet build **/project.json')
     }
