@@ -8,7 +8,7 @@ node('')
     }
     stage('Set file versions')
     {
-        def a = 'for f in $(find -name \'project.json\'); do cat $f | jq --arg v ${version} \'.version = $v\' ; done'
+        def a = 'for f in $(find -name \'project.json\'); do cat $f | cat ; done'
         echo ('Ok!')
         echo(a)
         sh(a)
