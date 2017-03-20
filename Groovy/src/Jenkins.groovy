@@ -23,7 +23,7 @@ node('')
 
     stage('Tests')
     {
-        sh('for d in $(grep -r -e "testRunner" -l | xargs dirname); do (cd $d && dotnet test); done')
+        sh('for d in $(grep -r -e "testRunner" -l --include project.json | xargs dirname); do (cd $d && dotnet test); done')
     }
 
     stage('Publish')
