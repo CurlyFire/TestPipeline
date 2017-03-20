@@ -1,5 +1,5 @@
 #!groovy
-node
+node("node")
         {
             stage("Checkout")
                     {
