@@ -33,7 +33,7 @@ node('')
     }
     stage('Docker build')
     {
-        docker.withServer('tcp://192.168.210.92:4243')
+        docker.withServer('tcp://192.168.2.16:4243')
         {
             docker.build('inspq/presentation.web','Presentation.Web/Docker')
         }
