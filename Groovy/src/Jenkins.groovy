@@ -35,7 +35,11 @@ node('')
     {
         docker.withServer('tcp://192.168.2.16:4243')
         {
-            docker.build('inspq/presentation.web','Presentation.Web/Docker')
+            docker.withRegistry('http://localhost:8082','9c901a03-cf59-48e1-9383-51aad8eb2512')
+            {
+                def img = docker.build('inspq/presentation.web','Presentation.Web/Docker')
+                img.push()
+            }
         }
     }
 }
