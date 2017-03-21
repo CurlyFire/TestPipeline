@@ -31,5 +31,9 @@ node('')
         sh('''cd $WORKSPACE/Presentation.Web 
               dotnet publish -o Docker/output''')
     }
+    stage('Docker build')
+    {
+        docker.build('inspq/presentation.web','Presentation.Web/Docker')
+    }
 }
 
