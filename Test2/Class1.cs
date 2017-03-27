@@ -1,7 +1,5 @@
-﻿
-
-using NUnit.Framework;
-using Presentation.Web;
+﻿using NUnit.Framework;
+using Presentation.Web.Controllers;
 
 namespace Tests
 {
@@ -11,7 +9,7 @@ namespace Tests
         [Test]
         public void DoIt2()
         {
-            var s = new Startup(null);
+            var s = new HomeController();
             Assert.IsTrue(true);
 
         }
