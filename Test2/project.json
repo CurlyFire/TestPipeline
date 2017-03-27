@@ -4,7 +4,8 @@
     "FluentAssertions": "4.16.0",
     "Moq": "4.6.38-alpha",
     "NUnit": "3.4.0",
-    "dotnet-test-nunit": "3.4.0-beta-3"
+    "dotnet-test-nunit": "3.4.0-beta-3",
+    "Presentation.Web": "9.9.11"
   },
   "testRunner": "nunit",
   "frameworks": {
