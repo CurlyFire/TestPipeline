@@ -61,5 +61,5 @@
       "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
     ]
   },
-  "version": "5.4.2"
+  "version": "0.0.0-preview52"
 }
