@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0-preview52",
+  "version": "1.9.7",
   "dependencies": {
     "FluentAssertions": "4.16.0",
     "Moq": "4.6.38-alpha",
